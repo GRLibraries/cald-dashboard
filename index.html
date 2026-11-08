@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 CALD Collections Survey – Results</title>
+<meta name="description" content="Results of the 2026 CALD collections survey, with breakdown by language spoken at home.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#results">Skip to results</a>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Georges River Libraries</p>
+    <h1>2026 CALD Collections Survey</h1>
+    <p class="lede" id="note"></p>
+    <p class="small" id="source"></p>
+  </div>
+</header>
+
+<nav class="controls" aria-label="Dashboard controls">
+  <div class="wrap controls-inner">
+    <div class="viewswitch" role="tablist" aria-label="View">
+      <button role="tab" id="tab-overview" aria-selected="true" data-view="overview">Overview</button>
+      <button role="tab" id="tab-compare" aria-selected="false" data-view="compare">Compare languages</button>
+    </div>
+    <div id="filterbar" class="filterbar">
+      <span class="filterlabel" id="filterlabel">Language spoken at home:</span>
+      <div id="chips" role="group" aria-labelledby="filterlabel"></div>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" id="results" tabindex="-1">
+  <p id="status" class="status" role="status" aria-live="polite"></p>
+  <div id="content"></div>
+  <section id="themes" aria-labelledby="themes-h"></section>
+</main>
+
+<footer class="wrap foot">
+  <p>Respondent-level data in this site is anonymised: names, email addresses and timestamps have been removed. Multi-select answers are counted per option, so option totals can exceed respondent numbers. A respondent who names more than one home language is counted under each of them.</p>
+</footer>
+
+<script src="data/survey.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
